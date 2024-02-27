@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#root {
+    font-family: "Be Vietnam Pro", sans-serif;
+    height: 100%;
+    background-color: #181819;
+}
+.bg-search-image {
+    background-image: url('Search.svg');
+
+}
+
+
+  
+  .checkbox-input:checked + .checkbox-label::after {
+    background-color: blue; /* Change to your desired background color */
+    content: '\2713'; /* Checkmark symbol */
+    display: block;
+    text-align: center;
+    line-height: 15px;
+    color: white; /* Color of the checkmark */
+  }
+
+  .fixed-width-grid {
+    display: grid;
+    grid-template-columns: 50px 120px 100px 60px;
+    gap: 30px; 
+  }
+
+  @media (min-width: 700px) {
+    .fixed-width-grid {
+      grid-template-columns: 50px 150px 120px 100px;
+      gap: 60px; 
+
+    }
+  }
+@media (min-width: 1280px) {
+  .fixed-width-grid {
+    grid-template-columns: 50px 150px 120px 100px 100px;
+    gap: 60px; 
+  }
+}
